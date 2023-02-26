@@ -1,0 +1,122 @@
+.cards-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.plans-card {
+    border: 1px solid var(--Light-gray);
+    border-radius: 5%;
+    cursor: pointer;
+    padding: 1.2rem 0.9rem;
+    width: 30.5%;
+}
+
+.plans-card:hover {
+    border: 1px solid var(--Marine-blue);
+}
+
+.plans-card img {
+    margin-bottom: 2.45rem;
+}
+
+.card-title {
+    font-weight: var(--bold);
+    color: var(--Marine-blue)
+}
+
+.card-subtitle {
+    font-size: 0.9rem;
+    color: var(--Cool-gray);
+    margin-top: 0.3rem;
+}
+
+.card-yearly-offer {
+    color: var(--Marine-blue);
+    font-size: 0.9rem;
+    margin-top: 0.4rem;
+    transform: scaleX(0.82) translate(-11%);
+    font-weight: var(--medium);
+}
+
+
+.toggle-wrapper {
+    border-radius: 8px;
+    background-color: var(--Alabaster);
+    display: flex;
+    justify-content: center;
+    margin-top: 1.8rem;
+    padding: 1rem 0;
+}
+
+.inner {
+    display: flex;
+    transform: translateX(-3%);
+}
+
+/* conditional rules */
+
+.card-selected {
+    border: 1px solid var(--Marine-blue);
+    background-color: var(--Soft-light-blue);
+}
+
+.active-toggle {
+    color: var(--Marine-blue);
+    font-size: 0.88rem;
+    font-weight: var(--bold);
+}
+
+.unactive-toggle {
+    color: var(--Cool-gray);
+    font-size: 0.88rem;
+    font-weight: var(--medium);
+}
+
+/* Responsive */
+
+@media (max-width: 500px) {
+    .cards-wrapper {
+        display: block;
+    }
+
+    .plans-card {
+        align-items: flex-start;
+        border-radius: 7px;
+        display: flex;
+        width: 100%;
+        padding: 0.85rem 0.80rem 0.91rem 0.80rem;
+    }
+
+    .plans-card:not(:first-child) {
+        margin-top: 0.7rem;
+    }
+
+    .plans-card img {
+        margin: 0;
+        width: 15%;
+        margin-right: 0.7rem;
+    }
+
+    .card-title {
+        font-size: 0.86rem;
+    }
+
+    .card-subtitle {
+        font-size: 0.75rem;
+    }
+
+    .card-yearly-offer {
+        font-size: 0.75rem;
+    }
+
+    .toggle-wrapper {
+        margin-top: 1.5rem;
+        padding: 0.8rem 0;
+    }
+
+    .active-toggle,
+    .unactive-toggle {
+        font-size: 0.74rem;
+    }
+
+}

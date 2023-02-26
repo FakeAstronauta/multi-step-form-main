@@ -1,0 +1,49 @@
+.greetings-wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.greetings-wrapper img {
+    width: 12.3%;
+}
+
+.greetings-wrapper h1 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
+.greetings-wrapper p {
+    color: var(--Cool-gray);
+    font-size: 1.06rem;
+    font-weight: var(--medium);
+    line-height: 1.45;
+    margin-top: 0.9rem;
+    margin-bottom: 0;
+    transform: scaleX(0.92);
+    width: 75%;
+}
+
+@media (max-width: 500px) {
+    .greetings-wrapper {
+        padding: 4.2rem 0.2rem;
+    }
+
+    .greetings-wrapper img {
+        width: 16.8%;
+    }
+
+    .greetings-wrapper h1 {
+        font-size: 1.32rem;
+        margin-top: 1.4rem;
+    }
+
+    .greetings-wrapper p {
+        font-size: 0.9rem;
+        width: 95%;
+    }
+}

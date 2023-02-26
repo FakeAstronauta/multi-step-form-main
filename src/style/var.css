@@ -1,0 +1,30 @@
+:root {
+    /* Colors */
+
+    /* Primary */
+    --Marine-blue: hsl(213, 96%, 18%);
+    --Soft-marine-blue: hsl(213, 98%, 32%);
+    --Purplish-blue: hsl(243, 100%, 62%);
+    --Soft-purplish-blue: hsl(243, 100%, 77%);
+    --Pastel-blue: hsl(228, 100%, 84%);
+    --Light-blue: hsl(206, 94%, 87%);
+    --Soft-light-blue: hsl(210, 50%, 98%);
+    --Strawberry-red: hsl(354, 84%, 57%);
+
+    /* Neutral */
+    --Cool-gray: hsl(231, 11%, 63%);
+    --Soft-cool-gray: hsl(228, 6%, 65%);
+    --Light-gray: hsl(229, 24%, 87%);
+    --Magnolia: hsl(217, 100%, 97%);
+    --Alabaster: hsl(231, 100%, 99%);
+    --White: hsl(0, 0%, 100%);
+
+    /* Font info */
+
+    --family: 'Ubuntu', sans-serif;
+
+    --regular: 400;
+    --medium: 500;
+    --bold: 600;
+
+}

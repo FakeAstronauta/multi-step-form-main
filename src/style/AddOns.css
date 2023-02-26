@@ -1,0 +1,69 @@
+.add-on-card {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2rem 1.4rem;
+
+    border: 1px solid var(--Light-gray);
+    border-radius: 9px;
+}
+
+.add-on-card:hover,
+.active-add-on-card {
+    border: 1px solid var(--Marine-blue);
+}
+
+.active-add-on-card {
+    background-color: var(--Soft-light-blue);
+}
+
+.add-on-card:not(:first-child) {
+    margin-top: 1rem;
+}
+
+.add-on-title {
+    color: var(--Marine-blue);
+    font-size: 1rem;
+    font-weight: var(--bold);
+}
+
+.add-on-subtitle {
+    color: var(--Cool-gray);
+    font-size: 0.95rem;
+    font-weight: var(--regular);
+
+    margin-top: 0.24rem;
+    transform: scaleX(0.93) translate(-4%)
+}
+
+.add-on-price {
+    color: var(--Purplish-blue);
+    font-size: 0.9rem;
+}
+
+
+/* Responsive */
+
+@media(max-width: 500px) {
+    .add-on-card {
+        border-radius: 7px;
+        padding: 0.7rem 0.7rem;
+    }
+
+    .add-on-card:not(:first-child) {
+        margin-top: 0.7rem;
+    }
+
+    .add-on-title {
+        font-size: 0.75rem;
+    }
+
+    .add-on-subtitle {
+        margin-top: 0.20rem;
+        font-size: 0.7rem;
+    }
+
+    .add-on-price {
+        font-size: 0.7rem;
+    }
+}

@@ -1,0 +1,39 @@
+.back-card {
+    position: relative;
+}
+
+.back-card img {
+    width: 100%;
+}
+
+.back-card ul {
+    padding: 0;
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    justify-content: space-between;
+    width: 48%;
+}
+
+.step-index-mobile {
+    position: relative;
+    color: white;
+    height: fit-content;
+    padding: 0.81rem 0.84rem;
+
+    border-radius: 50%;
+    border: 1.3px solid var(--White);
+    font-size: 0.75rem;
+    font-weight: var(--medium);
+}
+
+/* conditional class */
+
+.current-step-mobile {
+    background-color: var(--Light-blue);
+    color: var(--Marine-blue);
+    font-weight: var(--bold);
+}

@@ -1,0 +1,90 @@
+form label {
+    font-family: inherit;
+    font-size: 0.87rem;
+    font-weight: var(--medium);
+    transform: scale(1, 1.13);
+}
+
+.input-warning {
+    color: var(--Strawberry-red);
+    font-size: 0.90rem;
+    font-weight: var(--bold);
+    transform: scale(1, 1.02) translateY(-0.01rem);
+}
+
+.label-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+form div:not(:nth-child(1)) {
+    margin-top: 1.52rem;
+}
+
+/* Input rules */
+
+input[type="text"],
+input[type="email"] {
+    display: block;
+    margin-top: 0.49rem;
+    padding: 0.89rem 0.98rem;
+    width: 100%;
+
+    border-radius: 7px;
+    color: var(--Marine-blue);
+    font-size: 0.98rem;
+    font-family: inherit;
+    font-weight: var(--bold);
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder {
+    font-size: 1.04rem;
+    font-weight: var(--medium);
+    transform: scale(0.95, 1) translateX(-2.5%)
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    outline: none;
+    border: 1px solid var(--Marine-blue);
+}
+
+/* optional style */
+
+.normal-border {
+    border: 1.1px solid var(--Light-gray);
+}
+
+.warning-border {
+    border: 1.1px solid var(--Strawberry-red);
+}
+
+/* responsive */
+
+@media (max-width: 500px) {
+    .input-warning {
+        font-size: 0.6rem;
+    }
+
+    form label {
+        font-size: 0.64rem;
+    }
+
+    input[type="text"]::placeholder,
+    input[type="email"]::placeholder {
+        font-size: 0.83rem;
+        color: var(--Soft-cool-gray);
+    }
+
+    form div:not(:nth-child(1)) {
+        margin-top: 0.92rem;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        padding: 0.42rem 0.78rem 0.5rem 0.78rem;
+        border-radius: 3px;
+        margin-top: 0.24rem;
+    }
+}

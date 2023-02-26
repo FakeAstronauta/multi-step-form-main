@@ -1,0 +1,169 @@
+.card {
+    background-color: var(--White);
+    border-radius: 15.2px;
+    box-shadow: 0 20px 40px -10px var(--Light-gray);
+
+    display: flex;
+    margin: 0 auto;
+    padding: 0.92rem 0 0.8rem 0.96rem;
+    width: 65.2%;
+
+    max-width: 1000px;
+}
+
+.content-wrapper {
+    width: 48.5%;
+    flex-direction: column;
+    display: flex;
+}
+
+.content-wrapper h2 {
+    font-size: 2.02rem;
+    font-weight: var(--bold);
+    letter-spacing: 0.5px;
+
+    margin-top: 2.5rem;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.content-wrapper p {
+    color: var(--Cool-gray);
+    font-weight: var(--normal);
+    transform: scale(1, 1.11);
+
+    margin-top: 0.82rem;
+}
+
+.step-content-wrapper {
+    margin-top: 1.5rem
+}
+
+.btn-wrapper {
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+
+    height: 100%;
+}
+
+/* buttons rules */
+
+.btn-card {
+    border-radius: 8px;
+    color: var(--White);
+    position: relative;
+    padding: 1.5rem 3.8rem;
+    white-space: nowrap;
+}
+
+.btn-step-next {
+    background-color: var(--Marine-blue);
+}
+
+.btn-confirm {
+    background-color: var(--Purplish-blue);
+}
+
+.btn-step-next:hover {
+    background-color: var(--Soft-marine-blue);
+}
+
+.btn-confirm:hover {
+    background-color: var(--Soft-purplish-blue);
+}
+
+.btn-step-prev {
+    background-color: var(--White);
+    color: var(--Cool-gray);
+    font-weight: var(--medium);
+
+    padding: 0.9rem 0;
+}
+
+.btn-step-prev:hover {
+    color: var(--Marine-blue);
+    font-weight: var(--bold);
+}
+
+.btn-step-prev,
+.btn-card {
+    margin-bottom: 1.3rem;
+    cursor: pointer;
+}
+
+/* Mobile button */
+
+.btn-wrapper-mobile {
+    align-items: center;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.9rem 0.85rem;
+}
+
+.btn-card-mobile {
+    font-size: 0.75rem;
+    border-radius: 3px;
+    cursor: pointer;
+    color: var(--White);
+    position: relative;
+    padding: 1.05rem 2.57rem;
+    white-space: nowrap;
+}
+
+/* Responsive */
+
+@media (max-width: 500px) {
+    .card-wrapper-mobile {
+        /* space occupied  */
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        /* size */
+        width: 100%;
+        height: 100%;
+        /* display elements inside */
+        padding-top: 5.3rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .card {
+        border-radius: 8px;
+
+        padding: 0;
+        width: 91%;
+
+        margin-bottom: 1.2rem;
+    }
+
+    .content-wrapper {
+        width: 86%;
+    }
+
+    .content-wrapper h2 {
+        font-size: 1.24rem;
+        margin-top: 1.7rem;
+    }
+
+    .content-wrapper p {
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+
+    .step-content-wrapper {
+        margin-top: 0.4rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .btn-step-prev {
+        margin-bottom: 0;
+        font-size: 0.75rem;
+        padding: 0;
+    }
+
+}

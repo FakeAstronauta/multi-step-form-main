@@ -1,0 +1,58 @@
+aside {
+    position: relative;
+}
+
+.card aside ul {
+    color: var(--White);
+    left: 2rem;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 2.4rem;
+}
+
+.card aside ul li {
+
+    display: flex;
+}
+
+.card aside ul li:not(:first-child) {
+    margin-top: 1.94rem;
+}
+
+.step-index {
+    height: fit-content;
+    margin-right: 1rem;
+    margin-top: 0.1rem;
+    padding: 0.4rem 0.7rem 0.5rem 0.75rem;
+
+    border-radius: 50%;
+    border: 1.3px solid var(--White);
+    font-size: 0.9rem;
+    font-weight: var(--medium);
+}
+
+.step-info {
+    color: var(--Cool-gray);
+    font-size: 0.85rem;
+    font-weight: var(--medium);
+
+    margin-bottom: 0.02rem;
+    transform: scale(0.86, 1) translateX(-8%);
+}
+
+.step-title {
+    font-size: 0.9rem;
+    font-weight: var(--medium);
+    letter-spacing: 0.08em;
+
+    transform: scale(0.86, 1) translateX(-8%);
+}
+
+/* conditional class */
+
+.current-step {
+    background-color: var(--Light-blue);
+    color: var(--Marine-blue);
+    font-weight: var(--bold);
+}
